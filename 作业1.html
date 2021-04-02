@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+        }
+        li{
+            box-sizing: border-box;
+            border: 2px solid black;
+            float: left;
+            width: 20px;
+            height: 20px;
+            /* background-color:red; */
+        }
+       
+    </style>
+</head>
+<body>
+ <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+
+ </ul>
+ <script>
+     
+     var lis = document.getElementsByTagName('li');
+    var flag = new Array(100);
+    for(var j = 0; j < flag.length ; j++){
+        flag[j] = 0;
+    }
+     for (var i = 0; i < 100 ; i++) {
+        lis[i].count = i;
+        lis[i].onclick = function(){
+            if(flag[this.count] == 0)
+            {
+                this.style.backgroundColor = 'red';   
+                 flag[this.count]  = 1;
+            }
+            else{
+                this.style.backgroundColor = null;   
+                 flag[this.count]  = 0;
+            }
+                 
+     }
+
+     }
+ </script>
+</body>
+</html>
